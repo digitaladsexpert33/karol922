@@ -4,165 +4,206 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Karool</title>
-  <meta name="description" content="Join our high-accuracy stock/forex tips Telegram channel. Limited spots. 100% free demo.">
+  <meta name="description" content="Join Karool's Telegram channel for daily stock market analysis and educational content.">
+  
   <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" />
 
+  <!-- Open Graph for Facebook -->
+  <meta property="og:title" content="Karool - Stock Market Analysis">
+  <meta property="og:description" content="Daily market analysis and educational content on Telegram.">
+  <meta property="og:type" content="website">
 
   <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '3168214633389732');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=3168214633389732&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-
-  
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '3168214633389732');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=3168214633389732&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
 
   <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      margin: 0;
       font-family: 'Segoe UI', sans-serif;
       background: #0e0e0e;
-      color: #ffffff;
+      color: #fff;
       display: flex;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
       padding: 20px;
-      animation: fadeIn 1s ease-in;
-    }
-
-    @keyframes fadeIn {
-      0% { opacity: 0; transform: translateY(20px); }
-      100% { opacity: 1; transform: translateY(0); }
     }
 
     .container {
       background: #1a1a1a;
       padding: 30px 20px;
-      max-width: 420px;
+      max-width: 400px;
       width: 100%;
       border-radius: 20px;
-      box-shadow: 0 0 20px rgba(0,255,150,0.2);
       text-align: center;
-      animation: fadeUp 1s ease-out;
+      border: 1px solid #222;
     }
 
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
+    /* Fallback Logo */
     .logo {
-      width: 100px;
-      margin-bottom: 20px;
+      width: 90px;
+      height: 90px;
+      margin: 0 auto 20px;
       border-radius: 50%;
+      background: #111;
       border: 2px solid #00ffaa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      font-weight: 800;
+      color: #00ffaa;
     }
 
     h1 {
-      font-size: 1.6rem;
+      font-size: 1.5rem;
       color: #00ffaa;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
 
-    .section-title {
-      font-size: 1.2rem;
-      font-weight: bold;
-      color: #00ffaa;
-      margin: 20px 0 10px;
+    .sub {
+      font-size: 0.9rem;
+      color: #999;
+      margin-bottom: 25px;
     }
 
-    .benefit-text {
-      font-size: 0.95rem;
-      margin: 6px 0;
-      color: #ddd;
+    .points {
+      text-align: left;
+      margin-bottom: 25px;
     }
 
-    p {
-      font-size: 1rem;
-      margin: 10px 0 20px;
+    .point {
+      background: #111;
+      border: 1px solid #222;
+      padding: 12px;
+      border-radius: 10px;
+      margin-bottom: 8px;
+      font-size: 0.9rem;
+      color: #ccc;
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
 
+    .point span { color: #00ffaa; }
+
+    /* Simple CTA without fake urgency */
     .cta-btn {
-      background-color: #00ffaa;
+      display: block;
+      width: 100%;
+      background: #00ffaa;
       color: #000;
       border: none;
-      padding: 14px 28px;
+      padding: 14px;
       font-size: 1rem;
       border-radius: 10px;
       cursor: pointer;
       font-weight: bold;
-      animation: pulse 1.6s infinite;
-      transition: transform 0.3s ease;
-      margin-top: 20px;
+      text-decoration: none;
+      font-family: 'Segoe UI', sans-serif;
+      transition: 0.2s;
     }
 
-    .cta-btn:hover {
-      transform: scale(1.05);
+    .cta-btn:hover { opacity: 0.9; }
+
+    /* Clean Legal Footer */
+    .legal {
+      margin-top: 25px;
+      border-top: 1px solid #222;
+      padding-top: 15px;
     }
 
-    @keyframes pulse {
-      0% { box-shadow: 0 0 0 0 rgba(0, 255, 170, 0.7); }
-      70% { box-shadow: 0 0 0 15px rgba(0, 255, 170, 0); }
-      100% { box-shadow: 0 0 0 0 rgba(0, 255, 170, 0); }
+    .tabs {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 10px;
     }
 
-    .countdown {
-      font-size: 0.95rem;
-      margin-top: 15px;
-      color: #ffcc00;
+    .tab-btn {
+      background: none;
+      border: none;
+      color: #555;
+      font-size: 11px;
+      cursor: pointer;
+      font-family: 'Segoe UI', sans-serif;
+      text-decoration: underline;
     }
 
-    .disclaimer {
-      font-size: 0.8rem;
-      color: #888;
-      margin-top: 20px;
-    }
+    .tab-btn.active { color: #00ffaa; }
+
+    .tab-content { display: none; font-size: 10px; color: #555; line-height: 1.6; }
+    .tab-content.active { display: block; }
+    .tab-content a { color: #666; }
   </style>
 </head>
 <body>
+
   <div class="container">
-    <img src="karool.jpg" alt="Telegram Logo" class="logo" />
-    <h1>Join Trading with karol</h1>
-    <p>🚀 Daily Accurate Calls<br>📈 Free Demo Access<br>🔐 Limited Members Only</p>
 
-    <div class="section-title">Master TRADING STRATEGIES</div>
-    <div class="benefit-text">Learn the TECHNIQUES & INTRADAY STOCK TIPS to Protect your Capital</div>
-    <div class="benefit-text">eLearn the PROCEDURES to Earn More while Investing Lesser Capital</div>
+    <div class="logo">K</div>
 
-    <a href="https://t.me/+5HKRm3A_AWg3ZTA1" target="_blank">
-      <button class="cta-btn">Join Free Channel</button>
-    </a>
+    <h1>Trading with Karool</h1>
+    <p class="sub">Market Analysis & Educational Content</p>
 
-    <div class="countdown">Redirecting in <span id="timer">10</span> seconds...</div>
+    <div class="points">
+      <div class="point"><span>📊</span> Daily Market Analysis</div>
+      <div class="point"><span>📈</span> Intraday Insights</div>
+      <div class="point"><span>📚</span> Learning Strategies</div>
+    </div>
 
-    <p class="disclaimer">For educational purposes only. Not SEBI registered. DYOR.</p>
+    <a href="https://t.me/+5HKRm3A_AWg3ZTA1" class="cta-btn" id="ctaBtn">Open Telegram Channel</a>
+
+    <div class="legal">
+      <div class="tabs">
+        <button class="tab-btn active" onclick="openTab('pr', this)">Privacy</button>
+        <button class="tab-btn" onclick="openTab('di', this)">Disclaimer</button>
+        <button class="tab-btn" onclick="openTab('te', this)">Terms</button>
+      </div>
+
+      <div class="tab-content active" id="pr">
+        We use Meta Pixel for anonymous traffic analysis. No financial data is collected.
+      </div>
+
+      <div class="tab-content" id="di">
+        Not financial advice. Not SEBI registered. Trading involves risk. DYOR.
+      </div>
+
+      <div class="tab-content" id="te">
+        Must be 18+ to join. For educational purposes only.
+      </div>
+    </div>
+
   </div>
 
   <script>
-    let countdown = 10;
-    const timerEl = document.getElementById("timer");
-    const redirectUrl = "https://t.me/+5HKRm3A_AWg3ZTA1";
+    // Legal Tabs
+    function openTab(id, btn) {
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+      btn.classList.add('active');
+    }
 
-    const interval = setInterval(() => {
-      countdown--;
-      timerEl.textContent = countdown;
-      if (countdown === 0) {
-        clearInterval(interval);
-        window.location.href = redirectUrl;
-      }
-    }, 1000);
+    // Track CTA Click
+    document.getElementById('ctaBtn').addEventListener('click', function() {
+      fbq('track', 'Subscribe');
+    });
   </script>
 </body>
 </html>
